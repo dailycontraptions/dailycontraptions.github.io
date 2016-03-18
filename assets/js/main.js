@@ -204,7 +204,17 @@
 
 						}
 					});
+		setupTracking();
 
 	});
 
 })(jQuery);
+
+
+function setupTracking(){
+	$('a').click(function() {
+		ga('create', 'UA-26348201-3', 'auto');
+		ga('send', 'clicked ' + $(this).attr("href"));
+		return true; // return true so that the browser will navigate to the clicked a's href
+	})
+}
