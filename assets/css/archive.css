@@ -1,0 +1,16 @@
+/* other options */
+.card.medium > .card-image {
+    background: no-repeat center center;
+}
+
+span.card-title{
+    background-color: black;
+    opacity: 0.75;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+}
+
+.card-action {
+    text-align: center;
+}
